@@ -9,6 +9,8 @@ class Pointer{
 		this.height=height;
 		this.velX=velX;
 		this.velY=velY;
+		this.a=0.1;
+		this.targetX=0;
 		this.div=document.createElement("div");
 		this.div.style.border=2+"px solid blue";
 		this.div.style.width=this.width+"px";
@@ -22,6 +24,7 @@ class Pointer{
 		this.container.appendChild(this.div);
 	}
 	tick(){
+		this.x=this.x + this.a*(this.targetX-this.x);
 	}
 	render(){
 		this.div.style.left=this.x+"px";
