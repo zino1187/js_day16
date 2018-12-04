@@ -22,6 +22,9 @@ class Movie{
 		this.img.style.width=this.width+"px";
 		this.img.style.height=this.height+"px";
 
+		//box 모델에서 다른 박스와의 간격은 margin 이다!!
+		this.img.style.margin=2+"px";
+
 		this.container.appendChild(this.img);
 	}
 }

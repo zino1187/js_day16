@@ -97,11 +97,8 @@ function createThumb(){
 	box.style.left=0+"px";
 	box.style.top=0+"px";
 	thumb.appendChild(box);
-	
-	for(var i=0;i<len;i++){
-		var movie = new Movie(box,thumbWidth,thumbHeight, movies.marvel[i]);
-	}
 
+	var movie = new Movie(box,thumbWidth,thumbHeight, movies.marvel[0]);
 }
 addEventListener("load",function(){
 	init();
