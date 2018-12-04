@@ -5,7 +5,7 @@
 <title>JSON Gallery</title>
 <style>
 .wrapper{
-	width:1100px;
+	width:1000px;
 	height:600px;
 	margin:auto;
 }
@@ -60,10 +60,11 @@
 	float:right;
 }
 
-.thumb{
+#thumb{
 	width:100%;
 	height:100px;
 	background:#ffcc33;
+	position:relative;
 }
 </style>
 <script src="./data.js"></script>
@@ -71,9 +72,15 @@
 <script>
 var title;
 var info;
+var thumb;
+var box;//수많은 썸네일을 포함하여, 좌우로 움직일 div
+var thumbWidth=96; //이미지 한개당 너비
+var thumbHeight=66; //이미지 한개당 높이
+
 function init(){
 	title=document.getElementById("title");
 	info=document.getElementById("info");
+	thumb=document.getElementById("thumb");
 
 	createThumb();
 }
@@ -81,9 +88,13 @@ function init(){
 function createThumb(){
 	//먼저 영화가 총 몇편인지 알아보자!!
 	console.log(movies.marvel.length);
-	var movie = new Movie(
-		movies.marvel[0]
-	);
+	var len=movies.marvel.length;
+	box=document.createElement("box");//썸네일을 포함하여, 움직일 주체
+	box.style.width=(thumbWidth+2*2)*len+"px";
+	box.style.height=(thumbHeight+2*2)+"px";
+	box.style.background="red";
+	
+	var movie = new Movie( movies.marvel[0]);
 }
 addEventListener("load",function(){
 	init();
@@ -109,7 +120,7 @@ addEventListener("load",function(){
 			<button>이전 페이지</button>
 			<button>다음 페이지</button>
 		</div>
-		<div class="thumb">
+		<div id="thumb">
 			박스는 이미지의 수에 따라 그 크기가 결정되므로, 
 			프로그래밍 적으로 생성하는게 좋을 거 같음..
 		</div>
