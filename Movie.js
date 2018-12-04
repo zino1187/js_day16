@@ -6,10 +6,12 @@ class Movie{
 	변수 : 상태 (  데이터 ) 
 	함수 : 나의 데이터를 제어하는 로직 코드
 	*/
-	constructor(container,width,height,data){
+	constructor(id,container,width,height,data){
+		this.id=id;//식별자가 생김!!
 		this.container=container;
 		this.width=width;
 		this.height=height;
+		this.title=data.title;
 		this.url=data.url;
 		this.category_name=data.category_name;
 		this.release_year=data.release_year;
@@ -24,7 +26,13 @@ class Movie{
 
 		//box 모델에서 다른 박스와의 간격은 margin 이다!!
 		this.img.style.margin=2+"px";
-
+		
+		//이미지에 클릭 이벤트 구현하기 
+		this.img.addEventListener("click", ()=>{
+			//상세보기..
+			//alert(this.id);
+			getDetail(data);
+		});
 		this.container.appendChild(this.img);
 	}
 }
