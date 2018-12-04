@@ -3,6 +3,7 @@ var movies={
 		{
 			"movie_id": 1,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/91qvAndeVYL._RI_.jpg",
+			"youtube": "https://www.youtube.com/embed/VArrJu9uZr0",
 			"title": "Iron Man",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Action",
@@ -22,6 +23,7 @@ var movies={
 		{
 			"movie_id": 2,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/516j96%2BpCOL._SY445_.jpg",
+			"youtube": "https://www.youtube.com/embed/BWnjBlX054k",
 			"title": "The Incredible Hulk",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Action",
@@ -41,6 +43,7 @@ var movies={
 		{
 			"movie_id": 3,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/51xEeVYLqrL._SX342_.jpg",
+			"youtube": "https://www.youtube.com/embed/PcpXmZnJCcM",
 			"title": "Iron Man 2",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Action",
@@ -60,6 +63,7 @@ var movies={
 		{
 			"movie_id": 4,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/91P1wWqX63L._SL1500_.jpg",
+			"youtube": "https://www.youtube.com/embed/HCjPBpdlccM",
 			"title": "Thor",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Action",
@@ -79,6 +83,7 @@ var movies={
 		{
 			"movie_id": 5,
 			"url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5981/5981104_sa.jpg",
+			"youtube": "",
 			"title": "Captain America",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Action",
@@ -98,6 +103,7 @@ var movies={
 		{
 			"movie_id": 6,
 			"url": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg",
+			"youtube": "",
 			"title": "Avengers, The",
 			"phase": "Phase One: Avengers Assembled",
 			"category_name": "Science Fiction",
@@ -117,6 +123,7 @@ var movies={
 		{
 			"movie_id": 7,
 			"url": "http://3.bp.blogspot.com/-PTW4W1OlYIw/Wn7idkhYXTI/AAAAAAAAfIY/PAyn3Q1OwZQZxDrmshICJckNCI93AD6_QCK4BGAYYCw/s1600/ironman-3.jpg",
+			"youtube": "",
 			"title": "Iron Man 3",
 			"phase": "Phase Two",
 			"category_name": "Action",
@@ -136,6 +143,7 @@ var movies={
 		{
 			"movie_id": 8,
 			"url": "https://images.indianexpress.com/2018/04/thor-2-1-7591.jpg",
+			"youtube": "",
 			"title": "Thor: The Dark World",
 			"phase": "Phase Two",
 			"category_name": "Science Fiction",
@@ -155,6 +163,7 @@ var movies={
 		{
 			"movie_id": 9,
 			"url": "https://cdn-images-1.medium.com/max/1920/1*MCD4-OFYpa9ZD-FT-acgBg.jpeg",
+			"youtube": "",
 			"title": "Captain America: The Winter Soldier",
 			"phase": "Phase Two",
 			"edition": "Blu-ray Edition",
@@ -174,6 +183,7 @@ var movies={
 		{
 			"movie_id": 10,
 			"url": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_.jpg",
+			"youtube": "",
 			"title": "Guardians of the Galaxy",
 			"phase": "Phase Two",
 			"category_name": "Science Fiction",
@@ -193,6 +203,7 @@ var movies={
 		{
 			"movie_id": 11,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/915mchBV%2BaL._SL1500_.jpg",
+			"youtube": "",
 			"title": "Avengers: Age of Ultron",
 			"phase": "Phase Two",
 			"category_name": "Science Fiction",
@@ -212,6 +223,7 @@ var movies={
 		{
 			"movie_id": 12,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/91fctc1mLrL._SY445_.jpg",
+			"youtube": "",
 			"title": "Ant-Man",
 			"phase": "Phase Two",
 			"category_name": "Science Fiction",
@@ -231,6 +243,7 @@ var movies={
 		{
 			"movie_id": 13,
 			"url": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg",
+			"youtube": "",
 			"title": "Captain America: Civil War",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -250,6 +263,7 @@ var movies={
 		{
 			"movie_id": 14,
 			"url": "https://pbs.twimg.com/media/C1ffu8EUcAAI6M6.jpg",
+			"youtube": "",
 			"title": "Doctor Strange",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -269,6 +283,7 @@ var movies={
 		{
 			"movie_id": 15,
 			"url": "https://images-eu.ssl-images-amazon.com/images/I/61S1EYs6daL._SS500.jpg",
+			"youtube": "",
 			"title": "Guardians of the Galaxy Vol. 2",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -288,6 +303,7 @@ var movies={
 		{
 			"movie_id": 16,
 			"url": "https://www.virginmegastore.ae/medias/sys_master/root/h29/h2d/9105951752222/Spider-Man-Homecoming-366241-Detail.jpg",
+			"youtube": "",
 			"title": "Spider-Man: Homecoming",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -307,6 +323,7 @@ var movies={
 		{
 			"movie_id": 17,
 			"url": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_.jpg",
+			"youtube": "",
 			"title": "Thor: Ragnarok",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -326,6 +343,7 @@ var movies={
 		{
 			"movie_id": 18,
 			"url": "https://images-na.ssl-images-amazon.com/images/I/918mX9aiWmL._SY355_.jpg",
+			"youtube": "",
 			"title": "Black Panther",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -345,6 +363,7 @@ var movies={
 		{
 			"movie_id": 19,
 			"url": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+			"youtube": "",
 			"title": "Avengers: Infinity War",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
@@ -364,6 +383,7 @@ var movies={
 		{
 			"movie_id": 20,
 			"url": "https://m.media-amazon.com/images/M/MV5BYjcyYTk0N2YtMzc4ZC00Y2E0LWFkNDgtNjE1MzZmMGE1YjY1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+			"youtube": "",
 			"title": "Ant-Man and the Wasp",
 			"phase": "Phase Three",
 			"category_name": "Science Fiction",
