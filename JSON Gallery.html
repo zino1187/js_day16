@@ -89,7 +89,7 @@ function createThumb(){
 	//먼저 영화가 총 몇편인지 알아보자!!
 	console.log(movies.marvel.length);
 	var len=movies.marvel.length;
-	box=document.createElement("box");//썸네일을 포함하여, 움직일 주체
+	box=document.createElement("div");//썸네일을 포함하여, 움직일 주체
 	box.style.width=(thumbWidth+2*2)*len+"px";
 	box.style.height=(thumbHeight+2*2)+"px";
 	box.style.background="red";
