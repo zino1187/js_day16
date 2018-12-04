@@ -7,7 +7,6 @@
 .wrapper{
 	width:1100px;
 	height:600px;
-	background:yellow;
 	margin:auto;
 }
 #title{
@@ -20,12 +19,10 @@
 .content{
 	width:100%;
 	height:350px;
-	background:#ccff33;
 }
 .poster{
 	width:70%;
 	height:100%;
-	background:#000033;
 	float:left;
 	text-align:center;
 }
@@ -69,6 +66,29 @@
 	background:#ffcc33;
 }
 </style>
+<script src="./data.js"></script>
+<script src="./Movie.js"></script>
+<script>
+var title;
+var info;
+function init(){
+	title=document.getElementById("title");
+	info=document.getElementById("info");
+
+	createThumb();
+}
+//썸네일 생성한다!!
+function createThumb(){
+	//먼저 영화가 총 몇편인지 알아보자!!
+	console.log(movies.marvel.length);
+	var movie = new Movie(
+		movies.marvel[0]
+	);
+}
+addEventListener("load",function(){
+	init();
+});
+</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -90,10 +110,8 @@
 			<button>다음 페이지</button>
 		</div>
 		<div class="thumb">
-			<div id="mask">
-				박스는 이미지의 수에 따라 그 크기가 결정되므로, 
-				프로그래밍 적으로 생성하는게 좋을 거 같음..
-			</div>
+			박스는 이미지의 수에 따라 그 크기가 결정되므로, 
+			프로그래밍 적으로 생성하는게 좋을 거 같음..
 		</div>
 	</div>
 </body>
