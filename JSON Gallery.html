@@ -93,8 +93,12 @@ function createThumb(){
 	box.style.width=(thumbWidth+2*2)*len+"px";
 	box.style.height=(thumbHeight+2*2)+"px";
 	box.style.background="red";
-	
-	var movie = new Movie( movies.marvel[0]);
+	box.style.position="absolute";
+	box.style.left=0+"px";
+	box.style.top=0+"px";
+	thumb.appendChild(box);
+
+	var movie = new Movie(box,thumbWidth,thumbHeight, movies.marvel[0]);
 }
 addEventListener("load",function(){
 	init();
