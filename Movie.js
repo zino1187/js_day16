@@ -31,6 +31,7 @@ class Movie{
 		this.img.addEventListener("click", ()=>{
 			//상세보기..
 			//alert(this.id);
+			pointerMove(this.id);
 			getDetail(data);
 		});
 		this.container.appendChild(this.img);

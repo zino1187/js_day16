@@ -68,6 +68,7 @@
 </style>
 <script src="./data.js"></script>
 <script src="./Movie.js"></script>
+<script src="./Pointer.js"></script>
 <script>
 var title;
 var info;
@@ -77,6 +78,7 @@ var thumbWidth=96; //이미지 한개당 너비
 var thumbHeight=66; //이미지 한개당 높이
 var page=0; //현재 내가 보고있는 페이지
 var totalPage=0; //총 페이지 수
+var pointer;
 
 function init(){
 	title=document.getElementById("title");
@@ -84,6 +86,8 @@ function init(){
 	thumb=document.getElementById("thumb");
 
 	createThumb();
+	createPointer();
+	gameLoop();
 }
 //썸네일 생성한다!!
 function createThumb(){
@@ -103,6 +107,10 @@ function createThumb(){
 	for(var i=0;i<len;i++){
 		var movie = new Movie(i,box,thumbWidth,thumbHeight, movies.marvel[i]);
 	}
+}
+
+function createPointer(){
+	pointer = new Pointer(box,0,0,100,70,0,0);
 }
 
 //영화 상세보기 처리
@@ -137,6 +145,18 @@ function next(){
 }
 function moveBox(){
 	box.style.left= -(1000*page)+"px";	
+}
+//넘겨받은 인수값을 이용하여 포인터의 위치를 결정한다!!
+//0, 1, 2.....     인수*100 = 포인터의 위치!!
+function pointerMove(index){
+	pointer.x=index*100;
+}
+
+function gameLoop(){
+	pointer.tick();
+	pointer.render();
+
+	setTimeout("gameLoop()",10);
 }
 addEventListener("load",function(){
 	init();

@@ -11,17 +11,19 @@ class Pointer{
 		this.velY=velY;
 		this.div=document.createElement("div");
 		this.div.style.border=2+"px solid blue";
-		this.div.style.width=100+"px";
-		this.div.style.height=70+"px";
+		this.div.style.width=this.width+"px";
+		this.div.style.height=this.height+"px";
 		this.div.style.background="yellow";
 		this.div.style.opacity=0.3;
 		this.div.style.position="absolute";
-		this.div.style.left=0+"px";
-		this.div.style.top=0+"px";
+		this.div.style.left=this.x+"px";
+		this.div.style.top=this.y+"px";
+
+		this.container.appendChild(this.div);
 	}
 	tick(){
-
 	}
 	render(){
+		this.div.style.left=this.x+"px";
 	}
 }
